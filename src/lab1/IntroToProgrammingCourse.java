@@ -20,7 +20,7 @@ public class IntroToProgrammingCourse extends Course {
                     "Error: courseNumber cannot be null of empty string");
             System.exit(0);
         }
-        this.courseNumber = courseNumber;
+        courseNumber = courseNumber;
         
     }
 
@@ -32,7 +32,7 @@ public class IntroToProgrammingCourse extends Course {
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        this.credits = credits;
+        credits = credits;
     }
 
 
@@ -44,7 +44,7 @@ public class IntroToProgrammingCourse extends Course {
                     "Error: courseName cannot be null of empty string");
             System.exit(0);
         }
-        this.courseName = courseName;
+        courseName = courseName;
     }
 
    
@@ -56,7 +56,7 @@ public class IntroToProgrammingCourse extends Course {
                     "Error: prerequisites cannot be null of empty string");
             System.exit(0);
         }
-        this.prerequisites = prerequisites;
+        prerequisites = prerequisites;
     }
     
     

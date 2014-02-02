@@ -31,8 +31,16 @@ public class StartUp {
        two.setCredits(4);
        two.setPrerequisites("Intro To Programming");
        
-         System.out.println(" " + two.getCourseName() + two.getCourseNumber() + two.getPrerequisite() + two.getCredits());
+       System.out.println("Course: " + two.getCourseName() + " Course Number: " + two.getCourseNumber());
        
+       Course three = new AdvancedJavaCourse();
+       
+       three.setCourseName("Advanced Java Programming");
+       three.setCourseNumber("#00241");
+       three.setCredits(4);
+       three.setPrerequisites("Java Programming");
+       
+        System.out.println("Course: " + three.getCourseName() + " Course Number: " + three.getCourseNumber());
        
        
       }
