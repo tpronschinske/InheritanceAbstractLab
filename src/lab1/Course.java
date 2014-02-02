@@ -18,6 +18,13 @@ public abstract class Course {
     private String courseName;
     private String courseNumber;
     private double credits;
+
+    public Course(String prerequisite, String courseName, String courseNumber, double credits) {
+        this.prerequisite = prerequisite;
+        this.courseName = courseName;
+        this.courseNumber = courseNumber;
+        this.credits = credits;
+    }
     
     
 
@@ -39,11 +46,6 @@ public abstract class Course {
 
     
     public void setCourseNumber(String courseNumber) {
-        if(courseNumber == null || courseNumber.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseNumber cannot be null of empty string");
-            System.exit(0);
-        }
         this.courseNumber=courseNumber;
     }
 
@@ -51,11 +53,6 @@ public abstract class Course {
 
     
     public void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
       this.credits=credits;
     }
 
@@ -63,21 +60,11 @@ public abstract class Course {
 
     
     public void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
         this.courseName=courseName;
     }
 
     
      public void setPrerequisites(String prerequisites) {
-        if(prerequisites == null || prerequisites.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: prerequisites cannot be null of empty string");
-            System.exit(0);
-        }
         this.prerequisite=prerequisite;
     }
     
