@@ -15,32 +15,33 @@ public class StartUp {
     
      public static void main(String[] args) {
          
-       Course one = new IntroToProgrammingCourse();
+       Course oneClass = new IntroToProgrammingCourse();
 
-       one.setCourseName("Javascript");
-       one.setCourseNumber("#00147");
-       one.setCredits(3);
+       oneClass.setCourseName("Javascript");
+       oneClass.setCourseNumber("#00147");
+       oneClass.setCredits(3);
+       oneClass.setPrerequisites("None");
 
-       System.out.println("Course: " + one.getCourseName() + " Course Number: " + one.getCourseNumber());
+       System.out.println("Course: " + oneClass.getCourseName() + " Course Number: " + oneClass.getCourseNumber() + "Credits: " + oneClass.getCredits() + "Prerequisite: " + oneClass.getPrerequisite());
        
        
-       Course two = new IntroJavaCourse();
+       Course twoClass = new IntroJavaCourse();
        
-       two.setCourseName("Java Programming");
-       two.setCourseNumber("#00196");
-       two.setCredits(4);
-       two.setPrerequisites("Intro To Programming");
+       twoClass.setCourseName("Java Programming");
+       twoClass.setCourseNumber("#00196");
+       twoClass.setCredits(4);
+       twoClass.setPrerequisites("Intro To Programming");
        
-       System.out.println("Course: " + two.getCourseName() + " Course Number: " + two.getCourseNumber());
+       System.out.println("Course: " + twoClass.getCourseName() + " Course Number: " + twoClass.getCourseNumber()+ "Credits: " + twoClass.getCredits() + "Prerequisite: " + twoClass.getPrerequisite());
        
-       Course three = new AdvancedJavaCourse();
+       Course threeClass = new AdvancedJavaCourse();
        
-       three.setCourseName("Advanced Java Programming");
-       three.setCourseNumber("#00241");
-       three.setCredits(4);
-       three.setPrerequisites("Java Programming");
+       threeClass.setCourseName("Advanced Java Programming");
+       threeClass.setCourseNumber("#00241");
+       threeClass.setCredits(4);
+       threeClass.setPrerequisites("Java Programming");
        
-        System.out.println("Course: " + three.getCourseName() + " Course Number: " + three.getCourseNumber());
+        System.out.println("Course: " + threeClass.getCourseName() + " Course Number: " + threeClass.getCourseNumber()+ "Credits: " + threeClass.getCredits() + "Prerequisite: " + threeClass.getPrerequisite());
        
        
       }
