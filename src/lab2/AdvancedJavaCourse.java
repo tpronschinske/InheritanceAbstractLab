@@ -8,26 +8,19 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public abstract class AdvancedJavaCourse extends IntroJavaCourse {
+public class AdvancedJavaCourse implements Course {
+    
     private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
-        super(courseName, courseNumber);
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
-        this.credits = credits;
-        this.prerequisites = prerequisites;
-    }
-
-
 
     public String getCourseNumber() {
-        return courseNumber;
+       return courseNumber;
     }
 
+ 
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -37,9 +30,11 @@ public abstract class AdvancedJavaCourse extends IntroJavaCourse {
         this.courseNumber = courseNumber;
     }
 
+    
     public double getCredits() {
         return credits;
     }
+
 
     public void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
@@ -50,10 +45,12 @@ public abstract class AdvancedJavaCourse extends IntroJavaCourse {
         this.credits = credits;
     }
 
+    
     public String getPrerequisites() {
         return prerequisites;
     }
 
+ 
     public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,

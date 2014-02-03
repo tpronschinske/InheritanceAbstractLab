@@ -16,7 +16,7 @@ public abstract class IntroToProgrammingCourse implements Course {
     private String prerequisites;
     
     
-    public String getprrequisites(){
+    public String getPrequisites(){
         return prerequisites;
     }
     
@@ -62,7 +62,14 @@ public abstract class IntroToProgrammingCourse implements Course {
         this.courseName = courseName;
     }
 
-  
+    public void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: prerequisites cannot be null of empty string");
+            System.exit(0);
+        }
+        this.prerequisites = prerequisites;
+    }
 
 
     

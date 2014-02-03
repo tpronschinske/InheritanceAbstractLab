@@ -13,9 +13,12 @@ public abstract class IntroJavaCourse implements Course {
     private double credits;
     private String prerequisites;
 
-    public IntroJavaCourse(String courseName, String courseNumber) {
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
         this.courseName = courseName;
-        this.courseNumber = courseNumber;
     }
 
     public String getCourseNumber() {

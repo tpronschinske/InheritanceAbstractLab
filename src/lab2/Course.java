@@ -13,17 +13,19 @@ package lab2;
 public interface Course {
     
     
-    public abstract String getcourseName();
+    public abstract String getCourseName();
     
-    public abstract String getcourseNumber();
+    public abstract String getCourseNumber();
 
-    public abstract void setcourseName(String courseName);
+    public abstract void setCourseName(String courseName);
 
-    public abstract void setcourseNumber(String courseNumber);
+    public abstract void setCourseNumber(String courseNumber);
+    
+    public abstract void setCredits(double credits);
 
-    public abstract double getcredits();
+    public abstract double getCredits();
 
-    public abstract void setcredits(double credits);
+   
     
     
 }
