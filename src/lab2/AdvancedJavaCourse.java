@@ -8,16 +8,21 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class AdvancedJavaCourse {
+public abstract class AdvancedJavaCourse extends IntroJavaCourse {
     private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public AdvancedJavaCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+    public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
+        super(courseName, courseNumber);
+        this.courseName = courseName;
+        this.courseNumber = courseNumber;
+        this.credits = credits;
+        this.prerequisites = prerequisites;
     }
+
+
 
     public String getCourseNumber() {
         return courseNumber;
