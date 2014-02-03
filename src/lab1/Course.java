@@ -26,10 +26,9 @@ public abstract class Course {
         this.credits = credits;
     }
     
-    
 
     public String getPrerequisite() {
-        return prerequisite;
+        return "None";
     }
 
     public String getCourseName() {
@@ -43,33 +42,23 @@ public abstract class Course {
     public double getCredits() {
         return credits;
     }
-
     
     public void setCourseNumber(String courseNumber) {
         this.courseNumber=courseNumber;
     }
 
-   
-
-    
     public void setCredits(double credits) {
       this.credits=credits;
     }
 
 
-
-    
     public void setCourseName(String courseName) {
         this.courseName=courseName;
     }
-
     
      public void setPrerequisites(String prerequisites) {
         this.prerequisite=prerequisite;
     }
-    
-    
-    
-    
+   
     
 }

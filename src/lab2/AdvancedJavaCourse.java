@@ -20,7 +20,19 @@ public class AdvancedJavaCourse implements Course {
        return courseNumber;
     }
 
- 
+    public double getCredits() {
+        return credits;
+    }
+    
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+    
+     public String getCourseName() {
+        return courseName;
+    }
+    
+     
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -30,13 +42,8 @@ public class AdvancedJavaCourse implements Course {
         this.courseNumber = courseNumber;
     }
 
-    
-    public double getCredits() {
-        return credits;
-    }
-
-
-    public void setCredits(double credits) {
+  
+    public final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
@@ -44,14 +51,9 @@ public class AdvancedJavaCourse implements Course {
         }
         this.credits = credits;
     }
-
     
-    public String getPrerequisites() {
-        return prerequisites;
-    }
-
- 
-    public void setPrerequisites(String prerequisites) {
+    
+    public final void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: prerequisites cannot be null of empty string");
@@ -59,11 +61,7 @@ public class AdvancedJavaCourse implements Course {
         }
         this.prerequisites = prerequisites;
     }
-
-    public String getCourseName() {
-        return courseName;
-    }
-
+   
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,

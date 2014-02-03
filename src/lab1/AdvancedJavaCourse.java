@@ -14,8 +14,6 @@ public class AdvancedJavaCourse extends IntroJavaCourse {
         super(prerequisite, courseName, courseNumber, credits);
     }
     
-   
-
     public String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
     }
