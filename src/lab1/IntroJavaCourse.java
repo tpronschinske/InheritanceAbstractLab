@@ -8,8 +8,8 @@ import javax.swing.JOptionPane;
  */
 public class IntroJavaCourse extends IntroToProgrammingCourse {
 
-    public IntroJavaCourse(String prerequisite, String courseName, String courseNumber, double credits) {
-        super(prerequisite, courseName, courseNumber, credits);
+    public IntroJavaCourse(String courseName, String courseNumber, String prerequisite,  double credits) {
+        super(courseName, courseNumber, prerequisite, credits);
     }
     
     
