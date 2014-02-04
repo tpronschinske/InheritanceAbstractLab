@@ -16,6 +16,7 @@ public class StartUp {
      public static void main(String[] args) {
          
        Course oneClass = new IntroToProgrammingCourse("Javascript","#00147","None",3);
+       
 
        System.out.println("Course: " + oneClass.getCourseName() + " |Course Number: " + oneClass.getCourseNumber() + " |Credits: " + oneClass.getCredits() + " |Prerequisite: " + oneClass.getPrerequisite());
        
