@@ -19,7 +19,7 @@ public abstract class Course {
     private String courseNumber;
     private double credits;
 
-    public Course(String prerequisite, String courseName, String courseNumber, double credits) {
+    public Course(String courseName, String courseNumber, String prerequisite,  double credits) {
         this.prerequisite = prerequisite;
         this.courseName = courseName;
         this.courseNumber = courseNumber;
@@ -28,7 +28,7 @@ public abstract class Course {
     
 
     public String getPrerequisite() {
-        return "None";
+        return prerequisite;
     }
 
     public String getCourseName() {
