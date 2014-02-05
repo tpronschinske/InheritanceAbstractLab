@@ -15,17 +15,17 @@ public class StartUp {
     
      public static void main(String[] args) {
          
-       Course oneClass = new IntroToProgrammingCourse("Javascript","#00147","None",3);
+       Course oneClass = new IntroToProgrammingCourse("None","Javascript","#00147",3);
        
 
        System.out.println("Course: " + oneClass.getCourseName() + " |Course Number: " + oneClass.getCourseNumber() + " |Credits: " + oneClass.getCredits() + " |Prerequisite: " + oneClass.getPrerequisite());
        
        
-       Course twoClass = new IntroJavaCourse("Java Programming","#00196","Intro To Programming",4);
+       Course twoClass = new IntroJavaCourse("Intro To Programming","Java Programming","#00196",4);
    
        System.out.println("Course: " + twoClass.getCourseName() + " |Course Number: " + twoClass.getCourseNumber()+ " |Credits: " + twoClass.getCredits() + " |Prerequisite: " + twoClass.getPrerequisite());
        
-       Course threeClass = new AdvancedJavaCourse("Advanced Java Programming","#00241","Java Programming",4);
+       Course threeClass = new AdvancedJavaCourse("Java Programming","Advanced Java Programming","#00241",4);
        
        
        System.out.println("Course: " + threeClass.getCourseName() + " |Course Number: " + threeClass.getCourseNumber()+ " |Credits: " + threeClass.getCredits() + " |Prerequisite: " + threeClass.getPrerequisite());

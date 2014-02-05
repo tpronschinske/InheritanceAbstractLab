@@ -19,12 +19,15 @@ public abstract class Course {
     private String courseNumber;
     private double credits;
 
-    public Course(String courseName, String courseNumber, String prerequisite,  double credits) {
+    public Course(String prerequisite, String courseName, String courseNumber, double credits) {
         this.prerequisite = prerequisite;
         this.courseName = courseName;
         this.courseNumber = courseNumber;
         this.credits = credits;
     }
+
+ 
+    
     
 
     public String getPrerequisite() {
@@ -56,7 +59,7 @@ public abstract class Course {
         this.courseName=courseName;
     }
     
-     public void setPrerequisites(String prerequisites) {
+     public void setPrerequisites(String prerequisite) {
         this.prerequisite=prerequisite;
     }
    
