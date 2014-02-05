@@ -18,8 +18,8 @@ Question 6. In your solution when can Liskov Substitution principle be used and 
    is it not possible. Write down your answer by providing a comment in the
    startup class.
 
-The principle is sound and a great way to use his substitution process. But it wasnt helpful to know that these programs pertaind to courses
-it made using his naming convention more difficult as you did not want to repeat the same words that were already used to make a SuperClass.
+The principle is sound and a great way to use his substitution process. I think it helps with the future concepts of polymorphism and im sure we will
+get more into that when using SuperClasses.
 */
 
 package lab2;
