@@ -25,18 +25,18 @@ public class IntroToProgrammingCourse implements Course {
     public final String getCourseName() {
         return courseName;
     }   
-    
+    @Override
     public final String getPrerequisites(){
-        return prerequisites;
+        return "None";
     }
-    
+    @Override
     public final void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             System.out.println("Error: prerequisites cannot be null of empty string");
         }
         this.prerequisites = prerequisites;
     }
-        
+    @Override   
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             System.out.println("Error: prerequisites cannot be null of empty string");
@@ -44,7 +44,7 @@ public class IntroToProgrammingCourse implements Course {
         this.courseNumber = courseNumber;
     }
 
-    
+    @Override
     public final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {  
             System.out.println("Error: credits must be in the range 0.5 to 4.0");
@@ -52,7 +52,7 @@ public class IntroToProgrammingCourse implements Course {
         this.credits = credits;
     }
 
-
+    @Override
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             System.out.println("Error: prerequisites cannot be null of empty string");
